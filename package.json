@@ -1,5 +1,5 @@
 {
-  "name": "javascript-codebook",
+  "name": "javascript-code-book",
   "version": "1.0.0",
   "author": "Dany Dodson <danydodson@gmail.com>",
   "description": "JavaScript Code Book",
@@ -11,11 +11,6 @@
     "serve": "gatsby serve",
     "clean": "gatsby clean",
     "format": "prettier --write src/**/*.{js,jsx}"
-  },
-  "engines": {
-    "node": "14.18.1",
-    "npm": "8.1.0",
-    "yarn": "1.22.17"
   },
   "dependencies": {
     "babel-plugin-styled-components": "^2.0.2",
@@ -37,14 +32,21 @@
   "devDependencies": {
     "prettier": "2.5.1"
   },
+  "engines": {
+    "node": "14.18.1",
+    "npm": "8.1.0",
+    "yarn": "1.22.17"
+  },
   "repository": {
     "type": "git",
-    "url": "https://github.com/danydodson/danydodson.dev"
+    "url": "https://github.com/danydodson/javascript-code-book"
   },
   "license": "MIT",
   "keywords": [
-    "gatsby",
+    "coding",
+    "patterns",
     "javascript",
+    "gatsby",
     "mdx"
   ]
 }
