@@ -1,6 +1,3 @@
-// const createPostPages = require.resolve(`./node/create-post-pages.js`)
-// const createTagPages = require.resolve(`./node/create-tag-pages.js`)
-
 exports.createPages = async ({ actions, graphql, reporter }) => {
   const { createPage } = actions
 
@@ -8,8 +5,8 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
   const tagTemplate = require.resolve(`./src/templates/tag.js`)
 
   const response = await graphql(`
-  {
-    postsRemark: allMarkdownRemark(
+    {
+      postsRemark: allMarkdownRemark(
         filter: { fileAbsolutePath: { regex: "/posts/" } }
         sort: { order: DESC, fields: [frontmatter___date] }
         limit: 1000
@@ -41,25 +38,24 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
   const posts = response.data.postsRemark.edges
 
   posts.forEach(({ node }) => {
-    // createPostPages(createPage, node)
     createPage({
       path: `/posts/${node.frontmatter.slug}/`,
       component: postTemplate,
       context: {
         slug: node.frontmatter.slug
-      },
+      }
     })
   })
 
   const tags = response.data.tagsGroup.group
-  // createTagPages(createPage, tags)
-  tags.forEach(tag => {
+
+  tags.forEach((tag) => {
     createPage({
       path: `/tags/${tag.fieldValue}/`,
       component: tagTemplate,
       context: {
-        tag: tag.fieldValue,
-      },
+        tag: tag.fieldValue
+      }
     })
   })
 }
