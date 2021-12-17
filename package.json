@@ -9,7 +9,8 @@
     "develop:pg": "yarn run clean && GATSBY_GRAPHQL_IDE=playground gatsby develop -H 0.0.0.0 -p 8080",
     "start": "yarn run develop",
     "format": "prettier --write src/**/*.{js,jsx}",
-    "serve": "gatsby serve"
+    "serve": "gatsby serve",
+    "heroku-postbuild": "gatsby build"
   },
   "dependencies": {
     "babel-plugin-styled-components": "^1.12.0",
