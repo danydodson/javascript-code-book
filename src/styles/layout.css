@@ -3,11 +3,13 @@ html {
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
 }
+
 body {
   margin: 0;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+
 article,
 aside,
 details,
@@ -22,6 +24,7 @@ section,
 summary {
   display: block;
 }
+
 audio,
 canvas,
 progress,
@@ -598,10 +601,12 @@ code {
   padding-top: 0.2em;
   padding-bottom: 0.2em;
 }
+
 pre code {
   background: none;
   line-height: 1.42;
 }
+
 code:before,
 code:after,
 tt:before,
@@ -609,12 +614,14 @@ tt:after {
   letter-spacing: -0.2em;
   content: ' ';
 }
+
 pre code:before,
 pre code:after,
 pre tt:before,
 pre tt:after {
   content: '';
 }
+
 @media only screen and (max-width: 480px) {
   html {
     font-size: 100%;

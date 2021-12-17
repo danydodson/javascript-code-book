@@ -37,8 +37,8 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `code-book`,
-        short_name: `c-b`,
+        name: `javascript-codebook`,
+        short_name: `js-codebook`,
         icon: `src/images/icon.png`,
         start_url: `/`,
         background_color: `#663399`,

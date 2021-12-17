@@ -1,5 +1,5 @@
 {
-  "name": "jacascript-codebook",
+  "name": "javascript-codebook",
   "version": "1.0.0",
   "author": "Dany Dodson <danydodson@gmail.com>",
   "description": "JavaScript Code Book",
@@ -11,6 +11,11 @@
     "serve": "gatsby serve",
     "clean": "gatsby clean",
     "format": "prettier --write src/**/*.{js,jsx}"
+  },
+  "engines": {
+    "node": "14.18.1",
+    "npm": "8.1.0",
+    "yarn": "1.22.17"
   },
   "dependencies": {
     "babel-plugin-styled-components": "^2.0.2",
