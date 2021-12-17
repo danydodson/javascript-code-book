@@ -5,7 +5,7 @@ import Layout from '../components/layout'
 
 const IndexPage = () => (
   <Layout>
-    <h1>Hi</h1>
+    <h1>Hello</h1>
     <p>Welcome to your new Gatsby blog with Markdown pages.</p>
     <p>
       <Link to='/posts/blog-post-1/'>Go to my first Markdown blog post</Link>
